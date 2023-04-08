@@ -1,0 +1,54 @@
+@media (max-width: 500px){
+    /*ESTILOS PARA EL BANNER EN VERSION MINI MOBILE*/
+    .textoBanner{
+        top: 15%;
+        text-align: center;
+    }
+
+    .textoBanner a{
+        margin: 0px auto;
+        width: 100px;
+        height: 35px;
+    }
+
+    /*ESTILOS PARA SECCION PRINCIPAL DE FUNKOS EN VERSION MINI MOBILE*/
+
+    .funkoColeccionContainer img{
+        height: 150px;
+    }
+
+    .funkoColeccionContainer a{
+        margin-bottom: 0px;
+        width: 130px;
+        height: 27px;
+        font-size: small;
+    }
+
+    .funkoColeccionContainer{
+        margin: 20px;
+    }
+
+    .hr{
+        display: none;
+    }
+
+    .funkosImgMini{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .funkosImgMobile{
+        display: none;
+    }
+    .funkoColeccionContainer div{
+        align-items: center;
+        text-align: center;
+    }
+    .textoFunkoColeccion p{
+        display: none;
+        padding: 20px;
+    }
+    
+
+    
+}

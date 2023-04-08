@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- linkeo de stylesheets y favicon -->
     <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/mini.css">
+    <link rel="stylesheet" href="./stylesheets/desktop.css">
     <link rel="icon" href="./img/branding/isotype.svg">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/fadc21d84a.js" crossorigin="anonymous"></script>
@@ -49,22 +51,24 @@
                 <div class="textoFunkoColeccion">
                     <h2>STAR WARS & THE MANDALORIAN</h2>
                     <p>Disfruta de una saga que sigue agregando personajes a su colección</p>
-                    <hr>
+                    <hr class="hr">
+                    <img class="funkosImgMini" src="./img/star-wars/baby-yoda-1.webp" alt="">
                     <a href="">VER COLECCIÓN</a>
                 </div>
                 <div class="imagenFunkoYoda">
-                    <img src="./img/star-wars/baby-yoda-1.webp" alt="">
+                    <img class="funkosImgMobile" src="./img/star-wars/baby-yoda-1.webp" alt="">
                 </div>
             </div>
 
             <div class="funkoColeccionContainer">
                 <div class="imagenPokemonIndigo">
-                    <img src="./img/pokemon/vulpix-1.webp" alt="">
+                    <img class="funkosImgMobile" src="./img/pokemon/vulpix-1.webp" alt="">
                 </div>
                 <div class="textoFunkoColeccion">
                     <h2>POKEMON INDIGO</h2>
                     <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos</p>
-                    <hr>
+                    <hr class="hr">
+                    <img class="funkosImgMini" src="./img/pokemon/vulpix-1.webp" alt="">
                     <a href="">VER COLECCIÓN</a>
                 </div>
             </div>
@@ -73,66 +77,88 @@
                 <div class="textoFunkoColeccion">
                     <h2>HARRY POTTER</h2>
                     <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-                    <hr>
+                    <hr class="hr">
+                    <img class="funkosImgMini" src="./img/harry-potter/snape-patronus-1.webp" alt="">
+
                     <a href="">VER COLECCIÓN</a>
                 </div>
                 <div class="imagenHarryPotterCiervo">
-                    <img src="./img/harry-potter/snape-patronus-1.webp" alt="">
+                    <img class="funkosImgMobile" src="./img/harry-potter/snape-patronus-1.webp" alt="">
                 </div>
             </div>
         </section>   
     </main>
 
     <span class="ultimosLanzamientosSpan">ÚLTIMOS LANZAMIENTOS</span>
-    <section class="ultimosLanzamientosCarta1">
-        <div class="envoltorioUltimosLanzamientos">
-            <div class="lanzamientoCarta1">
-                <div class="imagenesLanzamientos">
-                    <img src="./img/star-wars/trooper-1.webp" alt="">
+    <section class="ultimosLanzamientos">
+        <div class="slideshow-container">
+        
+            <div class="mySlides fade">
+                <div class="caracteristica">
+                    <span>NUEVO</span>
                 </div>
-                <div class="textoLanzamientosCarta1">
+                <div class="numbertext">1 / 3</div>
+                <img src="./img/star-wars/trooper-1.webp" style="width:100%">
+                <div class="textoLanzamientosCarta">
                     <h4 class="claseLanzamientosCarta1">STAR WARS</h4>
                     <h3 class="nombreLanzamientosCarta1">STORMTROOPER LIGTHSABER</h3>
-                    <p class="precioLanzamientosCarta1">$  1799,99.-</p>
-                    <p class="cuotasLanzamientosCarta1">3 CUOTAS SIN INTERES</p>
+                    <p class="precioLanzamientosCarta1">$ 1799,99.-</p>
+                    <p class="cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
                 </div>
             </div>
-            <div class="lanzamientoCarta2">
-                <div class="imagenesLanzamientos">
-                    <img src="./img/pokemon/pidgeotto-1.webp" alt="">
+        
+            <div class="mySlides fade">
+                <div class="caracteristica">
+                    <span>NUEVO</span>
                 </div>
-                <div class="textoLanzamientosCarta1">
-                    <h4 class="claseLanzamientosCarta1">POKEMON</h4>
-                    <h3 class="nombreLanzamientosCarta1">PIDGEOTTO</h3>
-                    <p class="precioLanzamientosCarta1">$  1799,99.-</p>
-                    <p class="cuotasLanzamientosCarta1">3 CUOTAS SIN INTERES</p>
+                <div class="numbertext">2 / 3</div>
+                <img src="./img/pokemon/pidgeotto-1.webp" style="width:100%">
+                <div class="textoLanzamientosCarta">
+                    <h4 class="claseLanzamientosCarta2">POKEMON</h4>
+                    <h3 class="nombreLanzamientosCarta2">PIDGEOTTO</h3>
+                    <p class="precioLanzamientosCarta2">$ 1799,99.-</p>
+                    <p class="cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
                 </div>
             </div>
-            <div class="lanzamientoCarta3">
-                <div class="imagenesLanzamientosCarta3">
-                    <img src="./img/star-wars/trooper-1.webp" alt="">
+        
+            <div class="mySlides fade">
+                <div class="caracteristica">
+                    <span>NUEVO</span>
                 </div>
-                <div class="textoLanzamientosCarta3">
+                <div class="numbertext">3 / 3</div>
+                <img src="./img/harry-potter/luna-1.webp" style="width:100%">
+                <div class="textoLanzamientosCarta">
                     <h4 class="claseLanzamientosCarta3">HARRY POTTER</h4>
                     <h3 class="nombreLanzamientosCarta3">LUNA LOVEGOOD LION MASK</h3>
-                    <p class="precioLanzamientosCarta3">$  1799,99.-</p>
-                    <p class="cuotasLanzamientosCarta3">3 CUOTAS SIN INTERES</p>
+                    <p class="precioLanzamientosCarta3">$ 1799,99.-</p>
+                    <p class="cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
                 </div>
             </div>
-            <div class="flechaIzquierda">
-                <img src="./img/icons/" alt="">
-            </div>
-        </div>
         
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </section>
 
     <footer>
-        <nav>
-            <ul>SHOP</ul>
-            <ul>REGISTRARSE</ul>
-            <ul>INGRESAR</ul>
-            <ul>CONTACTO</ul>
-            <img src="./img/branding/isotype.svg" alt="">
+        <nav class="navFooter">
+            <div class="navLinksFooter">
+                <ul><a href="">SHOP</a></ul>
+                <ul><a href="">REGISTRARSE</a></ul>
+                <ul><a href="">INGRESAR</a></ul>
+                <ul><a href="">CONTACTO</a></ul>
+            </div>
+            <div class="logoFooter">
+                <img src="./img/branding/isotype.svg" alt="">
+            </div>
         </nav>
         <p>All Rights reserver 2023 - Federico Tempone &copy;</p>
     </footer>

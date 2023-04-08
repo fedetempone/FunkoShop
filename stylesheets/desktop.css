@@ -1,0 +1,95 @@
+@media (min-width: 800px){
+    /*ESTILOS PARA EL LOGO DEL NAV EN VERSION DESKTOP*/
+    .logoNavMobile{display: none;}
+
+    .logoNavDesktop{display: block;}
+
+    .closeMenu{display: none;}
+    
+    .openMenu{display: none;}
+
+    .navLinksUL{
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        position: unset;
+        transition: none;
+        list-style: none;
+        font-size: 1.5rem;
+        padding: 0;
+        z-index: 1;
+    }
+
+    nav li a:hover {
+        color: #ff4848 !important;
+    }
+
+    /*ESTILOS PARA EL BANNER EN VERSION DESKTOP*/
+    .textoBanner a:hover{
+        background-color: #ff4848;
+        color: white;
+    }
+
+    .bannerContainer{
+        position: relative;
+    }
+
+    .textoBanner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        text-align: center;
+    }
+
+    .textoBanner a{
+        margin: 0px auto;
+    }
+
+    /*ESTILOS PARA LA SECCION FUNKOS EN VERSION DESKTOP*/
+
+    .funkoColeccionContainer img {
+        height: 450px;
+    }
+
+    /*ESTILOS PARA LA SECCION ULTIMOS LANZAMIENTOS*/
+
+    .ultimosLanzamientosSpan{
+        font-size: 2rem;
+    }
+    
+    .envoltorioUltimosLanzamientos{
+        display: flex;
+        justify-content: center;
+    }
+
+    .caracteristica{
+        position: relative
+    }
+
+    .mySlides{
+        display: block !important;
+    }
+
+    .fade {
+        display: block !important;
+    }
+
+    .slideshow-container {
+        display: flex;
+        max-width: 80%;
+    }
+
+    /*ESTILOS PARA EL FOOTER*/
+    .navFooter{
+        margin: 0px auto;
+        padding: 20px;
+    }
+
+    .navLinksFooter a:hover{
+        color: #ff4848;
+    }
+
+    
+
+}
