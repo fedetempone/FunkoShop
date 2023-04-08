@@ -139,7 +139,6 @@ nav li a{
 
 .hr {
     display: block;
-    z-index: 99999;
     width: 100%;
     background: content-box;
     border-color: #ff4848;
