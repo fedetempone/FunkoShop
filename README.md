@@ -1,4 +1,4 @@
-# FunkoShop
+# FunkoShop (pagina en proceso)
 
 
 Replica de pagina de Funkos. Con funcionalidad y validaciones en Javascript. Actividad Responsive Design, para el curso del Gobierno de la Ciudad de Buenos Aires, Codo a Codo.
