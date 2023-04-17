@@ -93,14 +93,35 @@
     /*ESTILOS PARA LA PAGINA SHOP*/
 
     /*ESTILOS PARA LA SECCION BUSCAR*/
+    .contenedorPrincipal{
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    .search {
+        text-align: initial;
+        padding: 10px;
+        position: absolute;
+    }
+
+    .minMaxInputs {
+        margin: 0px;
+    }
+    
     .productosContainer{
         position: absolute;
     }
     .filter{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        user-select: none;
     }
     
     .buttonSearch{
+        display: none;
+    }
+
+    .botonesSlider{
         display: none;
     }
 

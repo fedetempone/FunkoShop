@@ -358,6 +358,14 @@ footer p{
 /*PAGINA SHOP*/
 
 /*ESTILOS PARA LA SECCION SEARCH*/
+.contenedorPrincipal{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer{
+    padding: 20px;
+}
 
 .search{
     display: block;
