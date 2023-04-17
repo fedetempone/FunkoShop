@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linkeo de stylesheets y favicon -->
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/mini.css">
+    <link rel="stylesheet" href="../stylesheets/desktop.css">
+    <link rel="icon" href="../img/branding/isotype.svg">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/fadc21d84a.js" crossorigin="anonymous"></script>
+    <title>FunkoShop !</title>
+</head>
+<body>
+    <header>
+        <div class="envoltorioNav">
+            <div class="logoNav">
+                <a class="logoNavMobile" href=""><img src="../img/branding/isotype.svg" alt="" class="hola"></a>
+                <a href="" class="logoNavDesktop"><img src="../img/branding/logo_light_horizontal.svg" alt=""></a>
+            </div>
+            
+            <nav>
+                <button class="openMenu"><img src="../img/icons/menu.png" alt=""></button>
+                <ul class="navLinksUL inactive menuAbierto">
+
+                    <button class="closeMenu"><img src="../img/icons/close-icon.svg" alt=""></button>
+                    <li><a href="../index.html">Inicio</li></a>
+                    <li><a href="">Contacto</li></a>
+                    <li><a href="">Login</li></a>
+                    <a href=""><img src="../img/icons/cart-icon.svg" alt=""></a>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <nav class="filtroDeBusqueda">
+        <div class="productosContainer">
+            <div class="search">
+                <p class="searchTexto">
+                    ENCONTRA LO QUE NECESITAS:
+                </p>
+                <input class="inputSearch" type="search" placeholder="item o categoria">
+                <button class="buttonSearch" type="submit">BUSCAR</button>
+                <p class="order">ORDENAR POR</p>
+                <select name="ordenar" id="ordenarPor">
+                    <option value="none">-</option>
+                    <option value="none">Mayor a Menor</option>
+                    <option value="none">Menor a Mayor</option>
+                </select>
+                <div class="priceContainer">
+                    <div class="priceText">
+                        <p class="price">PRECIO</p>
+                    </div>
+                    <div class="minMaxInputs">
+                        <p class="minimo">MIN 
+                            <input type="text" placeholder="0">
+                        </p>
+                        <p class="maximo">MAX
+                            <input type="text" placeholder="0">
+                        </p>
+                    </div>
+                </div>
+                <div class="filter">
+                    <p>FILTRAR</p>
+                    <label><input type="checkbox">NUEVOS</label>
+                    <label><input type="checkbox">OFERTAS</label>
+                    <label><input type="checkbox">EDICION ESPECIAL</label>
+                    <label><input type="checkbox">FAVORITOS</label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="">
+            <div class="slideshow-container">
+            
+                <div class="mySlides fade">
+                    <div class="caracteristica">
+                        <span>NUEVO</span>
+                    </div>
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../img/star-wars/trooper-1.webp" style="width:100%">
+                    <div class="textoLanzamientosCarta">
+                        <h4 class="claseLanzamientosCarta1">STAR WARS</h4>
+                        <h3 class="nombreLanzamientosCarta1">STORMTROOPER LIGTHSABER</h3>
+                        <p class="precioLanzamientosCarta1">$ 1799,99.-</p>
+                        <p class="cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="caracteristica">
+                        <span>NUEVO</span>
+                    </div>
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../img/pokemon/pidgeotto-1.webp" style="width:100%">
+                    <div class="textoLanzamientosCarta">
+                        <h4 class="claseLanzamientosCarta2">POKEMON</h4>
+                        <h3 class="nombreLanzamientosCarta2">PIDGEOTTO</h3>
+                        <p class="precioLanzamientosCarta2">$ 1799,99.-</p>
+                        <p class="cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="caracteristica">
+                        <span>NUEVO</span>
+                    </div>
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../img/harry-potter/luna-1.webp" style="width:100%">
+                    <div class="textoLanzamientosCarta">
+                        <h4 class="claseLanzamientosCarta3">HARRY POTTER</h4>
+                        <h3 class="nombreLanzamientosCarta3">LUNA LOVEGOOD LION MASK</h3>
+                        <p class="precioLanzamientosCarta3">$ 1799,99.-</p>
+                        <p class="cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="navFooter">
+            <div class="navLinksFooter">
+                <ul><a href="">SHOP</a></ul>
+                <ul><a href="">REGISTRARSE</a></ul>
+                <ul><a href="">INGRESAR</a></ul>
+                <ul><a href="">CONTACTO</a></ul>
+            </div>
+            <div class="logoFooter">
+                <img src="../img/branding/isotype.svg" alt="">
+            </div>
+        </nav>
+        <p>All Rights reserver 2023 - Federico Tempone &copy;</p>
+    </footer>
+
+<!-- linkeo de js -->
+<script src="../src/main.js"></script>
+</body>
+</html>

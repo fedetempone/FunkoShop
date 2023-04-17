@@ -90,6 +90,18 @@
         color: #ff4848;
     }
 
+    /*ESTILOS PARA LA PAGINA SHOP*/
+
+    /*ESTILOS PARA LA SECCION BUSCAR*/
+    .productosContainer{
+        position: absolute;
+    }
+    .filter{
+        display: block;
+    }
     
+    .buttonSearch{
+        display: none;
+    }
 
 }

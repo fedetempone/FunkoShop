@@ -48,7 +48,41 @@
         display: none;
         padding: 20px;
     }
-    
 
+    /*ESTILOS PARA LAS CARTAS DE PRODUCTOS */
+    .caracteristica span{
+        font-size: 8px;
+        height: 18px;
+        width: 38px;
+        line-height: 21px;
+    }
     
+    
+    /*ESTILOS PAGINA SHOP*/
+
+    /*SECCION BUSCADOR*/
+.search{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputSearch{
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+}
+    
+.buttonSearch{
+    width: 50%;
+    margin: 10px auto;
+}
+
+#ordenarPor{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.minMaxInputs {
+    margin: 0px;
+}
 }

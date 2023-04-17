@@ -345,3 +345,56 @@ footer p{
     text-align: center;
     color: white;
 }
+
+/*PAGINA SHOP*/
+
+/*ESTILOS PARA LA SECCION SEARCH*/
+
+.search{
+    display: block;
+    text-align: center;
+}
+
+.search p{
+    font-weight: bold;
+}
+
+.inputSearch{
+    font-size: 12px;
+    padding: 5px 12px;
+    border-color: black;
+    border: groove;
+    border-radius: 6px;
+}
+
+.buttonSearch{
+    margin-top: 6px;
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+    border-color: red;
+    padding: 6px 13px;
+    font-size: 12px;
+}
+
+#ordenarPor {
+    border: groove;
+    border-radius: 10px;
+    padding: 2px 12px;
+}
+
+.minMaxInputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.minMaxInputs input{
+    width: 30%;
+    margin: 5px;
+}
+
+.filter{
+    display: none;
+}
