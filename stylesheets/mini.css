@@ -57,6 +57,21 @@
         line-height: 21px;
     }
     
+    /*ESTILOS PARA EL FOOTER*/
+    .navFooter {
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .navLinksFooter ul{
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .logoFooter img{
+        width: 80%;
+    }
     
     /*ESTILOS PAGINA SHOP*/
 
