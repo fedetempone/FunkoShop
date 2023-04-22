@@ -1,7 +1,9 @@
 @media (max-width: 500px){
     /*ESTILOS PARA EL BANNER EN VERSION MINI MOBILE*/
     .textoBanner{
-        top: 30%;
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%, 50%);
         text-align: center;
     }
 
