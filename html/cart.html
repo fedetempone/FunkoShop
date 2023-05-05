@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- linkeo de stylesheets y favicon -->
-    <link rel="stylesheet" href="./stylesheets/style.css">
-    <link rel="stylesheet" href="./stylesheets/mini.css">
-    <link rel="stylesheet" href="./stylesheets/desktop.css">
-    <link rel="icon" href="./img/branding/isotype.svg">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/mini.css">
+    <link rel="stylesheet" href="../stylesheets/desktop.css">
+    <link rel="icon" href="../img/branding/isotype.svg">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/fadc21d84a.js" crossorigin="anonymous"></script>
     <title>FunkoShop !</title>
@@ -17,79 +18,48 @@
     <header>
         <div class="envoltorioNav">
             <div class="logoNav">
-                <a class="logoNavMobile" href=""><img src="./img/branding/isotype.svg" alt="" class="hola"></a>
-                <a href="" class="logoNavDesktop"><img src="./img/branding/logo_light_horizontal.svg" alt=""></a>
+                <a class="logoNavMobile" href=""><img src="../img/branding/isotype.svg" alt="" class="hola"></a>
+                <a href="" class="logoNavDesktop"><img src="../img/branding/logo_light_horizontal.svg" alt=""></a>
             </div>
             
             <nav>
-                <button class="openMenu"><img src="./img/icons/menu.png" alt=""></button>
+                <button class="openMenu"><img src="../img/icons/menu.png" alt=""></button>
                 <ul class="navLinksUL inactive menuAbierto">
 
-                    <button class="closeMenu"><img src="./img/icons/close-icon.svg" alt=""></button>
-                    <li><a href="./html/shop.html">Shop</li></a>
+                    <button class="closeMenu"><img src="../img/icons/close-icon.svg" alt=""></button>
+                    <li><a href="../index.html">Inicio</li></a>
+                    <li><a href="./shop.html">Shop</li></a>
                     <li><a href="">Contacto</li></a>
                     <li><a href="">Login</li></a>
-                    <a href="./html/cart.html"><img src="./img/icons/cart-icon.svg" alt=""></a>
+                    <a href=""><img src="../img/icons/cart-icon.svg" alt=""></a>
                 </ul>
             </nav>
         </div>
     </header> 
 
-        <section class="principalBanner">
-            <div class="bannerContainer">
-                <div class="textoBanner">
-                    <h1>Nuevos Ingresos</h1>
-                    <p>Descubrí el próximo Funko Pop de tu colección</p>
-                    <a href="./html/shop.html">SHOP</a>
-                </div>
-            </div>
-        </section>
-
     <main>
         <section class="funkoColeccion">
-            <div class="funkoColeccionContainer">
-                <div class="textoFunkoColeccion ">
-                    <h2>STAR WARS & THE MANDALORIAN</h2>
-                    <p>Disfruta de una saga que sigue agregando personajes a su colección</p>
-                    <hr class="hr">
-                    <img class="funkosImgMini" src="./img/star-wars/baby-yoda-1.webp" alt="">
-                    <a class="botonColeccion" href="">VER COLECCIÓN</a>
-                </div>
+            <div class="funkoColeccionContainer funkoContainerCart">
                 <div class="imagenFunkoYoda">
-                    <img class="funkosImgMobile hidden " src="./img/star-wars/baby-yoda-1.webp" alt="">
+                    <img class="funkosImgMobile" src="../img/star-wars/baby-yoda-1.webp" alt="">
                 </div>
-            </div>
-
-            <div class="funkoColeccionContainer">
-                <div class="imagenPokemonIndigo">
-                    <img class="funkosImgMobile hidden" src="./img/pokemon/vulpix-1.webp" alt="">
-                </div>
-                <div class="textoFunkoColeccion">
-                    <h2>POKEMON INDIGO</h2>
-                    <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos</p>
-                    <hr class="hr">
-                    <img class="funkosImgMini " src="./img/pokemon/vulpix-1.webp" alt="">
-                    <a class="botonColeccion" href="">VER COLECCIÓN</a>
-                </div>
-            </div>
-
-            <div class="funkoColeccionContainer">
-                <div class="textoFunkoColeccion">
-                    <h2>HARRY POTTER</h2>
-                    <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-                    <hr class="hr">
-                    <img class="funkosImgMini " src="./img/harry-potter/snape-patronus-1.webp" alt="">
-
-                    <a class="botonColeccion" href="">VER COLECCIÓN</a>
-                </div>
-                <div class="imagenHarryPotterCiervo">
-                    <img class="funkosImgMobile hidden" src="./img/harry-potter/snape-patronus-1.webp" alt="">
+                <div class="textoFunkoColeccion textoFunkosCart">
+                    <h5>STAR WARS</h5>
+                    <h2>BABY YODA BLUE BALL</h2>
+                    <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
+                    <p class="price">$1799,99.-</p>
+                    <div class="botonera">
+                        <button class="btnBotonera">-</button>
+                        <input type="number" value="0">
+                        <button class="btnBotonera">+</button>
+                    </div>
+                    <a href="#!" class="metodosDePago">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</p></a>
                 </div>
             </div>
         </section>   
     </main>
 
-    <span class="ultimosLanzamientosSpan">ÚLTIMOS LANZAMIENTOS</span>
+    <span class="ultimosLanzamientosSpan">PRODUCTOS RELACIONADOS</span>
     <section class="ultimosLanzamientos">
         <div class="slideshow-container">
         
@@ -98,7 +68,7 @@
                     <span>NUEVO</span>
                 </div>
                 <div class="numbertext">1 / 3</div>
-                <img src="./img/star-wars/trooper-1.webp" style="width:100%">
+                <img src="../img/star-wars/trooper-1.webp" style="width:100%">
                 <div class="textoLanzamientosCarta">
                     <h4 class="claseLanzamientosCarta1">STAR WARS</h4>
                     <h3 class="nombreLanzamientosCarta1">STORMTROOPER LIGTHSABER</h3>
@@ -112,7 +82,7 @@
                     <span>NUEVO</span>
                 </div>
                 <div class="numbertext">2 / 3</div>
-                <img src="./img/pokemon/pidgeotto-1.webp" style="width:100%">
+                <img src="../img/pokemon/pidgeotto-1.webp" style="width:100%">
                 <div class="textoLanzamientosCarta">
                     <h4 class="claseLanzamientosCarta2">POKEMON</h4>
                     <h3 class="nombreLanzamientosCarta2">PIDGEOTTO</h3>
@@ -126,7 +96,7 @@
                     <span>NUEVO</span>
                 </div>
                 <div class="numbertext">3 / 3</div>
-                <img src="./img/harry-potter/luna-1.webp" style="width:100%">
+                <img src="../img/harry-potter/luna-1.webp" style="width:100%">
                 <div class="textoLanzamientosCarta">
                     <h4 class="claseLanzamientosCarta3">HARRY POTTER</h4>
                     <h3 class="nombreLanzamientosCarta3">LUNA LOVEGOOD LION MASK</h3>
@@ -157,13 +127,13 @@
                 <ul><a href="">CONTACTO</a></ul>
             </div>
             <div class="logoFooter">
-                <img src="./img/branding/isotype.svg" alt="">
+                <img src="../img/branding/isotype.svg" alt="">
             </div>
         </nav>
         <p>All Rights reserved 2023 - Federico Tempone &copy;</p>
     </footer>
 
 <!-- linkeo de js -->
-<script src="./src/main.js"></script>
+<script src="../src/main.js"></script>
 </body>
 </html>

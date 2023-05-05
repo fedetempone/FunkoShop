@@ -47,6 +47,9 @@
     }
 
     /*ESTILOS PARA LA SECCION FUNKOS EN VERSION DESKTOP*/
+    .funkoColeccionContainer{
+        flex-direction: row;
+    }
 
     .funkoColeccionContainer img {
         height: 450px;
@@ -123,6 +126,36 @@
 
     .botonesSlider{
         display: none;
+    }
+
+     /* escondemos los numeros q estan arriba a la izquierda en cada card */
+    .numbertext{
+        display: none;
+    }
+
+    /* boton de sumar y restar con input en 0 para el carrito */
+    .botonera{
+        display: flex;
+        flex-direction: row !important;
+    
+    }
+
+    .botonera input{
+        width: 26px;
+        height: 17px;
+        text-align: center;
+    }
+
+    .metodosDePago{
+        color: #1D84B5;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .textoFunkosCart{
+        justify-content: flex-start !important;
+        align-items: baseline !important;
+        text-align: start !important;
     }
 
 }

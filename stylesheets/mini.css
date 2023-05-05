@@ -39,9 +39,10 @@
         margin-bottom: 30px;
     }
 
-    .funkosImgMobile{
-        display: none;
+    .hidden{
+        display: none !important;
     }
+
     .funkoColeccionContainer div{
         align-items: center;
         text-align: center;

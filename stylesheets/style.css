@@ -35,7 +35,7 @@ header{
     align-items: center;
     max-width: 1200px;
     margin: 0px auto;
-    height: 100px;
+    height: 60px;
     padding: 20px;
 }
 
@@ -92,9 +92,9 @@ nav li a{
 
 .closeMenu {
     position: absolute;
-    top: 55px;
+    top: 37px;
     right: 22px;
-    background: #34373f;
+    background: #30343f;
     border: none;;
 }
 
@@ -165,7 +165,17 @@ nav li a{
     align-items: center;
 }
 
-.funkoColeccionContainer a{
+.funkoContainerCart{
+    flex-direction: column;
+}
+
+.textoFunkosCart{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.botonColeccion{
     background-color: #30343F;
     color: white;
     text-decoration: none;
@@ -190,6 +200,34 @@ nav li a{
     justify-content: end;
     align-items: baseline;
 }
+
+/* estilos para los botones de la pagina CART en la seccion principal */
+.botonera {
+    flex-direction: row !important;
+}
+
+.botonera input{
+    width: 26px;
+    height: 17px;
+    text-align: center;
+}
+
+.btnBotonera{
+    height: 23px;
+    width: 28px;
+    background: #4F4F4F;
+    color: white;
+}
+
+/* estilos para quitarle al input tipo number las flechitas para subir y bajar el valor del value. */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
 
 
 /*ESTILOS PARA LA SECCION ULTIMOS LANZAMIENTOS*/
