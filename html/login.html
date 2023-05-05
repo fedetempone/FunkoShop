@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linkeo de stylesheets y favicon -->
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/mini.css">
+    <link rel="stylesheet" href="../stylesheets/desktop.css">
+    <link rel="icon" href="../img/branding/isotype.svg">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/fadc21d84a.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+    <!-- titulo del documento -->
+    <title>FunkoShop !</title>
+</head>
+<body>
+    
+    <header>
+        <div class="envoltorioNav">
+            <div class="logoNav">
+                <a class="logoNavMobile" href=""><img src="../img/branding/isotype.svg" alt="" class="hola"></a>
+                <a href="" class="logoNavDesktop"><img src="../img/branding/logo_light_horizontal.svg" alt=""></a>
+            </div>
+            
+            <nav>
+                <button class="openMenu"><img src="../img/icons/menu.png" alt=""></button>
+                <ul class="navLinksUL inactive menuAbierto">
+
+                    <button class="closeMenu"><img src="../img/icons/close-icon.svg" alt=""></button>
+                    <li><a href="../index.html">Inicio</li></a>
+                    <li><a href="./shop.html">Shop</li></a>
+                    <li><a href="">Contacto</li></a>
+                    <li><a href="./login.html">Login</li></a>
+                    <a href="./cart.html"><img src="../img/icons/cart-icon.svg" alt=""></a>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <main>
+        <div class="containerLoginForm">
+            <div class="form sign-up-container">
+                <h1>REGISTRARSE</h1>
+                <form class="formulario">
+                    <input type="text" placeholder="Nombre" name="nombre" id="name">
+                    <input type="email" placeholder="Email" name="email" id="email">
+                    <input type="password" placeholder="Contraseña" name="password" id="password">
+                    <a class="ok-account">¿Ya tienes una cuenta?</a>
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+    
+            <div class="form sign-in-container">
+                <h1>Iniciar sesión</h1>
+                <form class="formulario2">
+                    <input type="email" placeholder="Email" id="email2">
+                    <input type="password" placeholder="Contraseña" id="password2">
+                    <a class="no-account">¿Aun no tienes cuenta?</a>
+                    <input type="submit" value="Iniciar Sesión">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    
+
+    <footer>
+        <nav class="navFooter">
+            <div class="navLinksFooter">
+                <ul><a href="./html/shop.html">SHOP</a></ul>
+                <ul><a href="">REGISTRARSE</a></ul>
+                <ul><a href="">INGRESAR</a></ul>
+                <ul><a href="">CONTACTO</a></ul>
+            </div>
+            <div class="logoFooter">
+                <img src="../img/branding/isotype.svg" alt="">
+            </div>
+        </nav>
+        <p>All Rights reserved 2023 - Federico Tempone &copy;</p>
+    </footer>
+
+<!-- linkeo de js -->
+<script src="../src/navBar.js"></script>
+<script src="../src/loginForm.js"></script>
+</body>
+</html>

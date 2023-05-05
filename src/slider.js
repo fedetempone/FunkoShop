@@ -1,18 +1,3 @@
-const btnOpen = document.querySelector('.openMenu');
-const btnClose = document.querySelector('.closeMenu');
-const menuDisplay = document.querySelector('.navLinksUL');
-
-btnOpen.addEventListener('click', (e)=> {
-    e.preventDefault();
-    menuDisplay.classList.remove('inactive');
-} );
-
-btnClose.addEventListener('click', (e)=>{
-    console.log('funciona');
-    e.preventDefault();
-    menuDisplay.classList.add('inactive');
-});
-
 // ULTIMOS LANZAMIENTOS SLIDER
 
 var slideIndex = 1;
@@ -41,3 +26,4 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+

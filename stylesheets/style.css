@@ -453,3 +453,65 @@ footer p{
 .filter{
     display: none;
 }
+
+/* ESTILOS PARA LA PAGINA LOGIN */
+
+.pantallaCompleta{
+    position: absolute;
+    background-color: #30343F;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999999;
+}
+
+.containerLoginForm {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.form {
+    text-align: center;
+    width: 300px;
+    padding: 1rem;
+    background-color: rgba(199, 199, 195, .427);
+}
+
+.sign-in-container {
+    display: none;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.form input {
+    display: block;
+    width: 90%;
+    padding: .5rem;
+    margin: auto;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.form input[type="submit"] {
+    width: 100%;
+    padding: .5rem;
+    cursor: pointer;
+    background-color: rgb(32, 69, 181);
+    border: none;
+    color: #fff;
+}
+
+.form a {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 150px;
+    font-size: .7rem;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
