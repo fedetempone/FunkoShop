@@ -390,10 +390,14 @@ footer{
     list-style: none;
 }
 
-.navLinksFooter a{
+.navLinksFooter ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
+}
+
+.navLinksFooter li{
+    padding: 5px;
 }
 
 .logoFooter img{
@@ -488,7 +492,9 @@ footer p{
     text-align: center;
     width: 300px;
     padding: 1rem;
-    background-color: rgba(199, 199, 195, .427);
+    background-color: transparent;
+    border: 1px solid #ff4848;
+    border-radius: 5px;
 }
 
 .sign-in-container {
@@ -506,13 +512,17 @@ h1 {
     margin: auto;
     margin-bottom: 20px;
     outline: none;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 .form input[type="submit"] {
     width: 100%;
     padding: .5rem;
     cursor: pointer;
-    background-color: rgb(32, 69, 181);
+    background-color: #ff4848;
     border: none;
     color: #fff;
 }
@@ -522,17 +532,14 @@ h1 {
     margin: auto;
     margin-bottom: 1rem;
     width: 150px;
-    font-size: .7rem;
+    font-size: .8rem;
+    font-weight: bold;
     color: blue;
     cursor: pointer;
     text-decoration: underline;
 }
 
 /* ESTILOS PARA LA SECCION DE CONTACTO */
-
-.info-form{
-    padding: 25px;
-}
 
 #container-form{
     width: 100%;
@@ -541,8 +548,6 @@ h1 {
     display: grid;
     grid-template-columns: repeat(1,2fr);
     grid-gap: 50px;
-    margin-top: 20px;
-    padding: 42px 0px;
     text-align: center;
 }
 
@@ -572,16 +577,9 @@ h1 {
     margin-right: 10px;
 }
 
-#container-form a i:hover{
-    color: black;
-}
-
-#container-form a:hover{
-    color: #ff4848;
-}
 
 #container-form form .campo{
-    width: 93%;
+    width: 90%;
     padding: 15px 10px;
     font-size: 16px;
     border: 1px solid #dbdbdb;
@@ -590,7 +588,7 @@ h1 {
 }
 
 #container-form textarea{
-    width: 93%;
+    width: 90%;
     height: 270px;
     padding: 15px 10px;
     font-size: 16px;
@@ -610,10 +608,6 @@ h1 {
     border-radius: 3px;
     cursor: pointer;
     transition: all 300ms ease;
-}
-#container-form .btn-enviar:hover{
-    background: black;
-    color: white;
 }
 
 #sobre-nosotros-contact-form{

@@ -185,4 +185,31 @@
         text-align: start;
     }
 
+    #container-form .btn-enviar:hover{
+        background: black;
+        color: white;
+    }
+
+    #container-form a i:hover{
+        color: black;
+    }
+    
+    #container-form a:hover{
+        color: #ff4848;
+    }
+
+    #container-form{
+        margin-top: 20px;
+        padding: 42px 0px;
+    }
+
+    .info-form{
+        padding: 25px;
+    }
+
+    /* estilo para la seccion de login */
+    .form{
+        width: 300px;
+    }
+
 }

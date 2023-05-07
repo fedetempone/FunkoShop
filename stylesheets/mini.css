@@ -103,4 +103,19 @@
 .minMaxInputs {
     margin: 0px;
 }
+
+/* ESTILO PARA EL LOGIN */
+
+.form{
+    width: 65%;
+}
+
+.form h1{
+    font-size: 85%;
+}
+
+.form a{
+    width: auto;
+}
+
 }
