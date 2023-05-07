@@ -20,6 +20,10 @@ body{
     font-family: 'Encode Sans', sans-serif;
 }
 
+.active{
+    display: block;
+}
+
 .inactive {
     display: none !important;
 }

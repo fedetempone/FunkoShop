@@ -1,5 +1,11 @@
 @media (min-width: 800px){
     /*ESTILOS PARA EL LOGO DEL NAV EN VERSION DESKTOP*/
+     /* icono del carrito */
+
+    .iconoCart:hover{
+        filter: invert(69%) sepia(63%) saturate(1801%) hue-rotate(335deg) brightness(101%) contrast(99%);
+    }
+
     .logoNavMobile{display: none;}
 
     .logoNavDesktop{display: block;}
@@ -23,12 +29,6 @@
     nav li a:hover {
         color: #ff4848 !important;
         transition: ease-in-out 0.4s;
-    }
-
-    /* icono del carrito */
-
-    .iconoCart:hover{
-        filter: invert(69%) sepia(63%) saturate(1801%) hue-rotate(335deg) brightness(101%) contrast(99%);
     }
 
     /*ESTILOS PARA EL BANNER EN VERSION DESKTOP*/
@@ -99,9 +99,8 @@
         max-width: 80%;
     }
 
-    /*ESTILOS PARA LA PAGINA SHOP*/
 
-    /*ESTILOS PARA LA SECCION BUSCAR*/
+    /*ESTILOS PARA LA SECCION SHOP → BUSCAR*/
     .contenedorPrincipal{
         display: grid;
         grid-template-columns: 20% 80%;
@@ -134,6 +133,7 @@
         display: none;
     }
 
+
      /* escondemos los numeros q estan arriba a la izquierda en cada card */
     .numbertext{
         display: none;
@@ -143,6 +143,8 @@
     .flechaIzq, .flechaDer {
         display: none ;
     }
+
+    /********************** ESTILOS PARA LA SECCION CARRITO DE COMPRAS (CART) *******************/
 
     /* boton de sumar y restar con input en 0 para el carrito */
     .botonera{
@@ -163,20 +165,14 @@
         font-weight: bold;
     }
 
+    .metodosDePago:hover{
+        color: blue;
+    }
+
     .textoFunkosCart{
         justify-content: flex-start !important;
         align-items: baseline !important;
         text-align: start !important;
-    }
-
-    /*ESTILOS PARA EL FOOTER*/
-    .navFooter{
-    margin: 0px auto;
-    padding: 20px;
-    }
-
-    .navLinksFooter a:hover{
-        color: #ff4848;
     }
 
     /* estilos para la seccion de contacto */
@@ -219,6 +215,16 @@
 
     .form a:hover{
         color: #047c71;
+    }
+
+    /*ESTILOS PARA EL FOOTER*/
+    .navFooter{
+    margin: 0px auto;
+    padding: 20px;
+    }
+
+    .navLinksFooter a:hover{
+        color: #ff4848;
     }
 
 }

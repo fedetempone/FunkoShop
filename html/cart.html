@@ -37,7 +37,7 @@
     </header> 
 
     <main>
-        <section class="funkoColeccion">
+        <section id="content" class="funkoColeccion" style="display:none">
             <div class="funkoColeccionContainer funkoContainerCart">
                 <div class="imagenFunkoYoda">
                     <img class="funkosImgMobile" src="../img/star-wars/baby-yoda-1.webp" alt="">
@@ -46,10 +46,10 @@
                     <h5>STAR WARS</h5>
                     <h2>BABY YODA BLUE BALL</h2>
                     <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
-                    <p class="price">$1799,99.-</p>
+                    <p id='productCartPrice' class="price">$1799,99.-</p>
                     <div class="botonera">
                         <button class="btnBotonera">-</button>
-                        <input type="number" value="0">
+                        <input class="inputNumberCart" type="number" value="0">
                         <button class="btnBotonera">+</button>
                     </div>
                     <a href="#!" class="metodosDePago">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</p></a>
@@ -138,5 +138,7 @@
 <!-- linkeo de js -->
 <script src="../src/navBar.js"></script>
 <script src="../src/slider.js"></script>
+<script src="../src/shop.js"></script>
+<script src="../src/cart.js"></script>
 </body>
 </html>
