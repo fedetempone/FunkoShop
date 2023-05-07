@@ -41,29 +41,28 @@
         </div>
     </header> 
 
+    <!-- SECCION FORMULARIO DE CONTACTO -->
     <main>
-        <div class="containerLoginForm">
-            <div class="form sign-up-container">
-                <h1>REGISTRARSE</h1>
-                <form class="formulario">
-                    <input type="text" placeholder="Nombre" name="nombre" id="name">
-                    <input type="email" placeholder="Email" name="email" id="email">
-                    <input type="password" placeholder="Contraseña" name="password" id="password">
-                    <a class="ok-account">¿Ya tienes una cuenta?</a>
-                    <input type="submit" value="Registrarse">
-                </form>
+        <section id="container-form">
+            <div class="info-form">
+                <h2>Contáctanos</h2>
+                <h3>Trabajamos por pedidos. <br> Nuestro horario de atencion es de Lunes a Viernes de 09:00 a 18hs, ante consultas o sugerencias dejanos tu mensaje. Gracias !</h3>
+                <a href=""><i class="fa-brands fa-instagram"></i> Seguinos en Instagram</a>
+                <a href=""><i class="fa-brands fa-facebook"></i> Seguinos en Facebook </a>
+                <a href=""><i class="fa fa-phone"></i> 1130607355</a>
+                <a href=""><i class="fa fa-envelope"></i> productosanamaria@gmail.com</a>
             </div>
-    
-            <div class="form sign-in-container">
-                <h1>Iniciar sesión</h1>
-                <form class="formulario2">
-                    <input type="email" placeholder="Email" id="email2">
-                    <input type="password" placeholder="Contraseña" id="password2">
-                    <a class="no-account">¿Aun no tienes cuenta?</a>
-                    <input type="submit" value="Iniciar Sesión">
-                </form>
-            </div>
-        </div>
+            
+            <form action="#" method="post" id="form" autocomplete="on">
+                <input type="text" id="FormControlInput1" name="nombre" placeholder="Tu Nombre" class="campo" required>
+                <p class="alertas" id="alertas-names"></p>
+                <input type="email" id="FormControlInput2" name="email" placeholder="Tu Email" class="campo" required>
+                <p class="alertas" id="alertas-email"></p>
+                <textarea id="FormControlTextarea1" name="mensaje" placeholder="Tu Mensaje..." required></textarea>
+                <p class="alertas" id="alertas-msg"></p>
+                <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </section>
     </main>
 
     
@@ -85,6 +84,6 @@
 
 <!-- linkeo de js -->
 <script src="../src/navBar.js"></script>
-<script src="../src/loginForm.js"></script>
+<script src="../src/validation-form.js"></script>
 </body>
 </html>

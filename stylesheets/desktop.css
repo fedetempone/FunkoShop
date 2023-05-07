@@ -22,12 +22,20 @@
 
     nav li a:hover {
         color: #ff4848 !important;
+        transition: ease-in-out 0.4s;
+    }
+
+    /* icono del carrito */
+
+    .iconoCart:hover{
+        filter: invert(69%) sepia(63%) saturate(1801%) hue-rotate(335deg) brightness(101%) contrast(99%);
     }
 
     /*ESTILOS PARA EL BANNER EN VERSION DESKTOP*/
     .textoBanner a:hover{
         background-color: #ff4848;
         color: white;
+        transition: ease-in-out 0.4s;
     }
 
     .bannerContainer{
@@ -53,6 +61,14 @@
 
     .funkoColeccionContainer img {
         height: 450px;
+    }
+
+    /* botones ver coleccion */
+
+    .botonColeccion:hover{
+        background-color: black;
+        color: #ff4848;
+        transition: ease-in-out 0.4s;
     }
 
     /*ESTILOS PARA LA SECCION ULTIMOS LANZAMIENTOS*/
@@ -81,16 +97,6 @@
     .slideshow-container {
         display: flex;
         max-width: 80%;
-    }
-
-    /*ESTILOS PARA EL FOOTER*/
-    .navFooter{
-        margin: 0px auto;
-        padding: 20px;
-    }
-
-    .navLinksFooter a:hover{
-        color: #ff4848;
     }
 
     /*ESTILOS PARA LA PAGINA SHOP*/
@@ -133,6 +139,11 @@
         display: none;
     }
 
+    /* escondemos las flechas de izquierda y derecha en las cards */
+    .flechaIzq, .flechaDer {
+        display: none ;
+    }
+
     /* boton de sumar y restar con input en 0 para el carrito */
     .botonera{
         display: flex;
@@ -156,6 +167,22 @@
         justify-content: flex-start !important;
         align-items: baseline !important;
         text-align: start !important;
+    }
+
+    /*ESTILOS PARA EL FOOTER*/
+    .navFooter{
+    margin: 0px auto;
+    padding: 20px;
+    }
+
+    .navLinksFooter a:hover{
+        color: #ff4848;
+    }
+
+    /* estilos para la seccion de contacto */
+    #container-form{
+        grid-template-columns: repeat(2,1fr);
+        text-align: start;
     }
 
 }
