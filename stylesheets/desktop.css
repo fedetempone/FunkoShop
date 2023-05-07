@@ -212,4 +212,13 @@
         width: 300px;
     }
 
+    .form input[type="submit"]:hover {
+        background-color: black;
+        transition: ease-in-out .4s;
+    }
+
+    .form a:hover{
+        color: #047c71;
+    }
+
 }
