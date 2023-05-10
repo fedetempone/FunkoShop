@@ -20,8 +20,8 @@ body{
     font-family: 'Encode Sans', sans-serif;
 }
 
-.active{
-    display: block;
+.activar{
+    display: block !important;
 }
 
 .inactive {
@@ -282,7 +282,7 @@ img {
     text-align: center;
 }
 
-.cuotasLanzamientosCarta{
+.cuotas{
     color: #1D84B5;
 }
 

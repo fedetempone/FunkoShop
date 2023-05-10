@@ -12,14 +12,13 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/fadc21d84a.js" crossorigin="anonymous"></script>
     <title>FunkoShop !</title>
-    <link id="template-file" href="./cart.html" rel="import" /> 
 </head>
 <body>
     <header>
         <div class="envoltorioNav">
             <div class="logoNav">
-                <a class="logoNavMobile" href=""><img src="../img/branding/isotype.svg" alt="" class="hola"></a>
-                <a href="" class="logoNavDesktop"><img src="../img/branding/logo_light_horizontal.svg" alt=""></a>
+                <a href='./shop.html' class="logoNavMobile"><img src="../img/branding/isotype.svg" ></a>
+                <a href="./shop.html" class="logoNavDesktop"><img src="../img/branding/logo_light_horizontal.svg" ></a>
             </div>
             
             <nav>
@@ -83,12 +82,12 @@
                             <span>NUEVO</span>
                         </div>
                         <div class="numbertext">1 / 3</div>
-                        <a class="imgTrooper" href="./cart.html"><img src="../img/star-wars/trooper-1.webp" style="width:100%"></a>
-                        <div class="textoLanzamientosCarta">
-                            <h4 class="claseLanzamientosCarta1">STAR WARS</h4>
-                            <h3 class="nombreLanzamientosCarta1">STORMTROOPER LIGTHSABER</h3>
-                            <p class="precioLanzamientosCarta1">$ 1799,99.-</p>
-                            <p class="cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
+                        <a class="imgTrooper" href="./cart.html"></a>
+                        <div class="textoLanzamientosCarta descriptionTrooperContainer">
+                            <h4 class="trooperTagClass"></h4>
+                            <h3 class="trooperNameClass"></h3>
+                            <p class="trooperPriceClass"></p>
+                            <p class="trooperCuotasClass"></p>
                         </div>
                     </div>
                 
@@ -97,12 +96,12 @@
                             <span>NUEVO</span>
                         </div>
                         <div class="numbertext">2 / 3</div>
-                        <a class="imgPokemon" href="./shop.html"><img src="../img/pokemon/pidgeotto-1.webp" style="width:100%"></a>
-                        <div class="textoLanzamientosCarta">
-                            <h4 class="claseLanzamientosCarta2">POKEMON</h4>
-                            <h3 class="nombreLanzamientosCarta2">PIDGEOTTO</h3>
-                            <p class="precioLanzamientosCarta2">$ 1799,99.-</p>
-                            <p class="cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
+                        <a class="imgPokemon" href="./shop.html"></a>
+                        <div class="textoLanzamientosCarta descriptionPokemonContainer ">
+                            <h4 class="pokemonTagClass"></h4>
+                            <h3 class="pokemonNameClass"></h3>
+                            <p class="pokemonPriceClass"></p>
+                            <p class="pokemonCuotasClass"></p>
                         </div>
                     </div>
                 
@@ -111,16 +110,12 @@
                             <span>NUEVO</span>
                         </div>
                         <div class="numbertext">3 / 3</div>
-                        <a class="imgHP" href="./shop.html"><img src="../img/harry-potter/luna-1.webp" style="width:100%"></a>
-                        <div class="textoLanzamientosCarta">
-                            <h4 class="claseLanzamientosCarta3">HARRY POTTER</h4>
-                            <h3 class="nombreLanzamientosCarta3">LUNA LOVEGOOD LION MASK</h3>
-                            <p class="precioLanzamientosCarta3">$ 1799,99.-</p>
-                            <p class="cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
+                        <a class="imgHP" href="./shop.html"><!-- <img src="../img/harry-potter/luna-1.webp" style="width:100%">--></a>
+                        <div class="textoLanzamientosCarta descriptionHarryPotterContainer">
                         </div>
                     </div>
 
-                    
+                     
                 
                     <a class="prev flechaIzq" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next flechaDer" onclick="plusSlides(1)">&#10095;</a>
@@ -162,7 +157,7 @@
 <script src="../src/navBar.js"></script>
 <script src="../src/slider.js"></script>
 <script src="../src/shop.js"></script>
-<script src="../src/cart.js"></script>
+
 
 </body>
 </html>
