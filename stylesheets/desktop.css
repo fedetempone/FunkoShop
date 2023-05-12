@@ -60,7 +60,7 @@
     }
 
     .funkoColeccionContainer img {
-        height: 450px;
+        height: 260px;
     }
 
     /* botones ver coleccion */
@@ -73,8 +73,13 @@
 
     /*ESTILOS PARA LA SECCION ULTIMOS LANZAMIENTOS*/
 
+    .ultimosLanzamientos {
+        width: 80%;
+        margin: 0px auto;
+    }
+
     .ultimosLanzamientosSpan{
-        font-size: 2rem;
+        font-size: 1rem;
     }
     
     .envoltorioUltimosLanzamientos{
@@ -89,6 +94,8 @@
     .mySlides{
         display: block !important;
     }
+    
+    .prev, .next {display: none;}
 
     .fade {
         display: block !important;
@@ -97,6 +104,10 @@
     .slideshow-container {
         display: flex;
         max-width: 80%;
+    }
+
+    .dot {
+        display: none;
     }
 
 

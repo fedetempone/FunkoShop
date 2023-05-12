@@ -184,6 +184,37 @@ nav li a{
     font-weight: bold;
 }
 
+/* boton eliminar en pagina cart (carrito de compras)*/
+.eliminar{
+    position: absolute;
+    display: flex;
+    right: 8%;
+    top: 28%;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #ff4848;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+.eliminar img{
+    height: 38px !important;
+}
+
+/* boton comprar en pagina cart (carrito de compras) */
+
+.btnComprar{
+    background: #ff4848;
+    padding: 12px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 0.9px solid black;
+}
+
 /* botones ver coleccion */
 
 .botonColeccion{
