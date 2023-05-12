@@ -22,11 +22,24 @@ const containerPrincipal = document.querySelector('.funkoColeccion');
 // traigo del cart.html el contenedor de la imagen del producto 
 const imgProductContainer = document.querySelector('.imagenFunko');
 
-// input del cart.html
+// inputs del cart.html
 const input = document.querySelector('.inputNumberCart');
-// boton + y -  (del input) del cart.html
+const inputPokemon = document.querySelector('.inputNumberCartPokemon');
+const inputHP = document.querySelector('.inputNumberCartHP');
+
+// boton + y -  (de los inputs) del cart.html
 const addBtn = document.querySelector('#sumarBoton');
+const addBtnPokemon = document.querySelector('#sumarBotonPokemon');
+const addBtnHP = document.querySelector('#sumarBotonHP');
+
 const substractBtn = document.querySelector('#restarBoton');
+const substractBtnPokemon = document.querySelector('#restarBotonPokemon');
+const substractBtnHP = document.querySelector('#restarBotonHP');
+
+// boton eliminar producto 
+const btnEliminar = document.querySelector('.eliminar');
+const btnEliminarPokemon = document.querySelector('.eliminarPokemon');
+const btnEliminarHP = document.querySelector('.eliminarHP');
 
 function parse_query_string(query) {
     var vars = query.split("&");
@@ -84,62 +97,90 @@ const cartItems = productList.filter((item) =>
 
 
 const precioHTML = document.getElementById('productCartPrice');
+const precioHTML_item_2 = document.getElementById('productCartPrice2');
+const precioHTML_item_3 = document.getElementById('productCartPrice3');
 cartItems.forEach((element) => {
     document.getElementById(element.id).style.display = "flex";
-    precioHTML.textContent = '$' + element.price;
-    
+    precioHTML.innerHTML = '$' + element.price;
+    precioHTML_item_2.innerHTML = '$' + element.price;
+    precioHTML_item_3.innerHTML = '$' + element.price;
 });
 
-console.log(parseInt(input.value));
+
+// FUNCION PARA RESTAR O SUMAR STOCK
 try {
-    addBtn.addEventListener('click', addProducts);
-    substractBtn.addEventListener('click', substractProducts);
+        addBtn.addEventListener('click', addProducts);
+        addBtnPokemon.addEventListener('click', addProducts);
+        addBtnHP.addEventListener('click', addProducts);
 
-    function addProducts() {
+        substractBtn.addEventListener('click', substractProducts);
+        substractBtnPokemon.addEventListener('click', substractProducts);
+        substractBtnHP.addEventListener('click', substractProducts);
+        
 
-        productList.forEach((element, i) => {
-            let multi = 1;
-            console.log('el elemento' + element.price + 'esta en la posicion' + i);
-            console.log(element.price[i]);
-            console.log(productList[i].price); 
-            // precioHTML.textContent = '$' + element.price*multi;
-            if (element.id == 1){
-                precioHTML.textContent = '$' + element.price*parseInt(input.value);
+        function addProducts() {
+                arrayItemsSelected.forEach((item) => {
+                    if (item == 1){
+                            let suma = productList[0].price + 20000;
+                            precioHTML.textContent = '$' + suma;
+                            productList[0].price += 20000;
+                    } else if (item == 2){
+                            let suma = productList[1].price + 18500;
+                            precioHTML_item_2.textContent = '$' + suma;
+                            productList[1].price += 18500;
+                    }else if (item == 3){
+                            let suma = productList[2].price + 19000;
+                            precioHTML_item_3.textContent = '$' + suma;
+                            productList[2].price += 19000;
+                        }
+                });
+                input.value++;
+                inputPokemon.value++;
+                inputHP.value++;
             }
-            
-        
-        });
 
-        // for (i=0; i < productList.length; i++){
-        //     // console.log('input'+input.value);
-        //     let multiplicacion = 1;
-        //     console.log('preciohtml.textcontent = '+precioHTML.textContent);
-        //     precioHTML.textContent = productList[i].price*multiplicacion;
-        //     multiplicacion++;
-        //     console.log('array i price = '+productList[i].price);
-        // }
-        
-        // productList.forEach((productPrice) => 
-        
-        
-        // console.log(productPrice.price)
-        // );
-        input.value++;
-        // productList = productList.price*input.value;
-    }
-    
-
-    function substractProducts(){
-        if (input.value == 1){
-            return 0;
-        }else {
-            input.value--;
-        }
-    }
+            function substractProducts(){
+                arrayItemsSelected.forEach((item) => {
+                    if (item == 1){
+                        console.log('preciohtml.textcontent = ' + precioHTML.textContent);
+                        let resta = productList[0].price - 20000;
+                        precioHTML.textContent = '$' + resta;
+                        productList[0].price -= 20000;
+                    }
+                    else if (item == 2){
+                            let resta = productList[1].price - 18500;
+                            precioHTML_item_2.textContent = '$' + resta;
+                            productList[1].price -= 18500;
+                    }else if (item == 3){
+                            let resta = productList[2].price - 19000;
+                            precioHTML_item_3.textContent = '$' + resta;
+                            productList[2].price -= 19000;
+                    }
+                });
+                input.value--;
+                inputPokemon.value--;
+                inputHP.value--;
+            }       
     } catch(err){
     console.log('');
 }
+console.log(btnEliminar);
+console.log(btnEliminarPokemon);
+try {
+    btnEliminar.addEventListener('click', eliminarProducto);
+    btnEliminarPokemon.addEventListener('click', eliminarProducto);
+    btnEliminarHP.addEventListener('click', eliminarProducto);
 
+    function eliminarProducto(){
+        if (btnEliminar.className == 'eliminar'){
+            document.getElementById('1').style.display = 'none';
+        } else if (btnEliminarPokemon == 'eliminarPokemon'){
+            document.getElementById('2').style.display = 'none';
+        }
+    }
+}catch(err){
+    console.log('');
+}
 
 // le agrego la imagen de cada producto a los anclas que estan en el html
 

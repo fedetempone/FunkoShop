@@ -118,4 +118,11 @@
     width: auto;
 }
 
+/* estilos para pagina cart.html */
+
+/* botones de comprar y eliminar */
+
+.botones_comprar_eliminar{
+    padding-top: 20px;
+}
 }

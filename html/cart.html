@@ -39,7 +39,6 @@
         <main>
             <section class="funkoColeccion">
                 <div id="1" class="funkoColeccionContainer funkoContainerCart" style="display:none">
-                    <button class="eliminar"><img src="../img/icons/papelera.png" alt="boton eliminar"></button>
                     <div class="imagenFunko">
                         <img class="funkosImgMobile" src="../img/star-wars/luke-box.webp" alt="imagen de producto">
                     </div>
@@ -54,11 +53,13 @@
                             <button id="sumarBoton" class="btnBotonera">+</button>
                         </div>
                         <a href="#!" class="metodosDePago">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</p></a>
-                        <button class="btnComprar">COMPRAR</button>
+                        <div class="botones_comprar_eliminar">
+                            <button class="btnComprar">COMPRAR</button>
+                            <button class="eliminar"><img src="../img/icons/papelera.png" alt="boton eliminar"></button>
+                        </div>
                     </div>
                 </div>
                 <div id="2" class="funkoColeccionContainer funkoContainerCart" style="display:none">
-                    <button class="eliminar"><img src="../img/icons/papelera.png" alt="boton eliminar"></button>
                     <div class="imagenFunko">
                         <img class="funkosImgMobile" src="../img/pokemon/pikachu-box.webp" alt="imagen de producto">
                     </div>
@@ -66,18 +67,20 @@
                         <h5>Pokemon</h5>
                         <h2>PIKACHU</h2>
                         <p>Figura coleccionable de Pikachu - Pokemon, edición limitada.</p>
-                        <p id='productCartPrice' class="price"></p>
+                        <p id='productCartPrice2' class="price"></p>
                         <div class="botonera">
-                            <button id="restarBoton" class="btnBotonera">-</button>
-                            <input class="inputNumberCart" type="number" value="1">
-                            <button id="sumarBoton" class="btnBotonera">+</button>
+                            <button id="restarBotonPokemon" class="btnBotonera">-</button>
+                            <input class="inputNumberCartPokemon" type="number" value="1">
+                            <button id="sumarBotonPokemon" class="btnBotonera">+</button>
                         </div>
                         <a href="#!" class="metodosDePago">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</p></a>
-                        <button class="btnComprar">COMPRAR</button>
+                        <div class="botones_comprar_eliminar">
+                            <button class="btnComprar">COMPRAR</button>
+                            <button class="eliminarPokemon"><img src="../img/icons/papelera.png" alt="boton eliminar"></button>
+                        </div>
                     </div>
                 </div>
                 <div id="3" class="funkoColeccionContainer funkoContainerCart" style="display:none">
-                    <button class="eliminar"><img src="../img/icons/papelera.png" alt="boton eliminar"></button>
                     <div class="imagenFunko">
                         <img class="funkosImgMobile" src="../img/harry-potter/hermione-box.webp" alt="imagen de producto">
                     </div>
@@ -85,14 +88,17 @@
                         <h5>Harry Potter</h5>
                         <h2>HERMIONE GRANGER</h2>
                         <p>Figura coleccionable de Hermione - Harry Potter, edición limitada.</p>
-                        <p id='productCartPrice' class="price"></p>
+                        <p id='productCartPrice3' class="price"></p>
                         <div class="botonera">
-                            <button id="restarBoton" class="btnBotonera">-</button>
-                            <input class="inputNumberCart" type="number" value="1">
-                            <button id="sumarBoton" class="btnBotonera">+</button>
+                            <button id="restarBotonHP" class="btnBotonera">-</button>
+                            <input class="inputNumberCartHP" type="number" value="1">
+                            <button id="sumarBotonHP" class="btnBotonera">+</button>
                         </div>
                         <a href="#!" class="metodosDePago">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</p></a>
-                        <button class="btnComprar">COMPRAR</button>
+                        <div class="botones_comprar_eliminar">
+                            <button class="btnComprar">COMPRAR</button>
+                            <button class="eliminarHP"><img src="../img/icons/papelera.png" alt="boton eliminar"></button>
+                        </div>
                     </div>
                 </div>
                 </div>

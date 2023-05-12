@@ -185,11 +185,13 @@ nav li a{
 }
 
 /* boton eliminar en pagina cart (carrito de compras)*/
-.eliminar{
-    position: absolute;
+.botones_comprar_eliminar{
+    flex-direction: row !important;
+    align-items: center !important;
+}
+
+.eliminar, .eliminarPokemon, .eliminarHP{
     display: flex;
-    right: 8%;
-    top: 28%;
     height: 40px;
     width: 40px;
     background: transparent;
@@ -199,7 +201,7 @@ nav li a{
     align-items: center;
 }
 
-.eliminar img{
+.eliminar img, .eliminarPokemon img, .eliminarHP img{
     height: 38px !important;
 }
 
@@ -213,6 +215,7 @@ nav li a{
     font-weight: bold;
     letter-spacing: 2px;
     border: 0.9px solid black;
+    margin-right: 20px;
 }
 
 /* botones ver coleccion */
