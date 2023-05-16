@@ -41,8 +41,11 @@ const btnEliminar = document.querySelector('.eliminar');
 const btnEliminarPokemon = document.querySelector('.eliminarPokemon');
 const btnEliminarHP = document.querySelector('.eliminarHP');
 
-// boton comprar producto
+// boton comprar producto y boton cerrar menu de seguir comprando
 const btnComprar = document.querySelector('.btnComprar');
+const btnComprarPokemon = document.querySelector('.btnComprarPokemon');
+const btnComprarHP = document.querySelector('.btnComprarHP');
+const btnCloseComprado = document.querySelector('.btnCloseComprado');
 
 // anclas con las imagenes dentro de la seccion productos relacionados (trooper pidgeoto y luna lovegood)
 const anclaImgTrooper = document.querySelector('.imgTrooperCartHTML');
@@ -281,7 +284,6 @@ try {
     btnEliminarHP.addEventListener('click', eliminarProducto);
 
     function eliminarProducto(){
-        console.log('entra o no ?');
         if (btnEliminar.className == 'eliminar'){
             document.getElementById('1').style.display = 'none';
         } if (btnEliminarPokemon.className == 'eliminarPokemon'){
@@ -295,7 +297,6 @@ try {
 }
 
 // FUNCION PARA MOSTRAR MENU DE PRODUCTOS SIN STOCK EN EL CART.HTML AL CLICKEAR PRODUCTOS RELACIONADOS
-console.log(btnCloseStock);
 try{
     anclaImgTrooper.addEventListener('click', showStock);
     anclaImgPokemon.addEventListener('click', showStock);
@@ -304,9 +305,12 @@ try{
     function showStock(e){
         e.preventDefault();
         document.querySelector('.noStock').style.display= 'flex';
+        document.body.style.overflowY = 'hidden';
+        console.log(document.body)
     }
     btnCloseStock.addEventListener('click', (e)=>{
         document.querySelector('.noStock').style.display= 'none';
+        document.body.style.overflowY = 'auto';
     });
     } catch(err){
         console.log('');
@@ -315,9 +319,16 @@ try{
 // FUNCION PARA MOSTRAR MENU DE PRODUCTO COMPRADO 
 try{
     btnComprar.addEventListener('click', productoComprado);
+    btnComprarPokemon.addEventListener('click', productoComprado);
+    btnComprarHP.addEventListener('click', productoComprado);
     function productoComprado(){
         document.querySelector('.comprado').style.display = ' flex';
+        document.body.style.overflowY = 'hidden';
     }
+    btnCloseComprado.addEventListener('click', (e)=>{
+        document.querySelector('.comprado').style.display = 'none';
+        document.body.style.overflowY = 'auto';
+    });
 }catch(err){
     console.log('');
 }

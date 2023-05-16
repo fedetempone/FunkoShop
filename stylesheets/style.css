@@ -206,7 +206,7 @@ nav li a{
 
 /* boton comprar en pagina cart (carrito de compras) */
 
-.btnComprar{
+.btnComprar ,.btnComprarPokemon ,.btnComprarHP{
     position: relative;
     background: transparent;
     padding: 12px;
@@ -682,6 +682,7 @@ h1 {
     align-items: center;
     opacity: 0.98;
     transition: 0.5s ease-in-out;
+    z-index: 9999;
 }
 
 .stockContainer h2{
@@ -711,7 +712,36 @@ h1 {
     position: absolute;
     top: 0;
     text-align: center;
-    background-color: #101010
+    background-color: #101010;
+    z-index: 9999;
     
 }
 
+.btnSeguirComprando{
+    position: relative;
+    background: transparent;
+    padding: 12px;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 0.9px solid red;
+    margin-right: 20px;
+}
+
+.textoComprado{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.textoComprado h1{
+    color: white;
+}
+
+.textoComprado p{
+    color: white;
+}
+
+.textoComprado p a{
+    color: blue;
+    text-decoration: none;
+}

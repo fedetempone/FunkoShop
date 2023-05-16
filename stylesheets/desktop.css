@@ -239,20 +239,16 @@
     }
 
     /* BOTON DE COMPRAR PARA LOGIN.HTML */
-    /* .btnComprar:hover{
-        color: #ff4848;
-        background: transparent;
-    } */
     
     .btnComprar:hover::before {
         transform: scaleX(1);
-      }
+    }
 
-    .btnComprar:hover{
+    .btnComprar:hover, .btnComprarPokemon:hover, .btnComprarHP:hover{
         background: transparent;
-        color: #bd3a6b;;
+        color: #dc41df;;
         transition: 0.4s ease-in-out;
-        border-color: #bd3a6b;
+        border-color: #dc41df;
     }
 
     .btnComprar::before{
@@ -271,14 +267,27 @@
 
     .eliminar:hover, .eliminarPokemon:hover, .eliminarHP:hover{
         background: transparent;
-        color: #bd3a6b;;
+        color: #dc41df;
         transition: 0.4s ease-in-out;
-        border-color: #bd3a6b;
+        border-color: #dc41df;
     }
 
     .eliminar img:hover , .eliminarPokemon img:hover , .eliminarHP img:hover{
-        filter: invert(28%) sepia(79%) saturate(827%) hue-rotate(295deg) brightness(102%) contrast(95%);
+        filter: invert(48%) sepia(38%) saturate(4276%) hue-rotate(268deg) brightness(85%) contrast(106%);
         transition: 0.4s ease-in-out;
+    }
 
+    /* BOTON SEGUIR COMPRANDO DEL MENU DESPLEGABLE AL PRESIONAR COMPRAR */
+    .btnSeguirComprando:hover{
+        background: transparent;
+        color: #dc41df;
+        transition: 0.4s ease-in-out;
+        border-color: #dc41df;
+        cursor: pointer;
+    }
+
+    /* link de contacto dentro del menu seguir comprando */
+    .textoComprado a:hover{
+        color: #dc41df;
     }
 }
