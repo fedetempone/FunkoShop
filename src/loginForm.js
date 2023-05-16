@@ -1,5 +1,18 @@
 const sign_in_container = document.querySelector('.sign-in-container');
 const sign_up_container = document.querySelector('.sign-up-container');
+const registrarse = document.querySelector('.inputRegistrarse');
+const iniciar_sesion = document.querySelector('.inputIniciarSesion');
+const nombre = document.getElementById('name');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const parrafoNombres = document.querySelector(".alertas-names");
+const parrafoEmail = document.querySelector(".alertas-email");  
+const parrafoPassword = document.querySelector(".alertas-password"); 
+const expresiones = { 
+    checkEmail : /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/, 
+    checkNombre : /(^[A-ZÁÉÍÓÚ]{1}([a-zñáéíóú]+){2,})(\s[A-ZÁÉÍÓÚ]{1}([a-zñáéíóú]+){2,})?$/,
+    checkPassword : /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/
+  }
 
 document.addEventListener('click', e => {
     if (e.target.matches('.ok-account')) {
@@ -10,3 +23,44 @@ document.addEventListener('click', e => {
         sign_in_container.style.display = "none";
     }
 })
+
+registrarse.addEventListener('click', (e) => {
+    e.preventDefault();
+    parrafoNombres.innerHTML = ""; 
+    parrafoEmail.innerHTML = "";
+    parrafoPassword.innerHTML = "";
+    let alertas = "";
+    let entrar = false; 
+
+    
+    // Condiciones para validar el formulario
+
+    if (!expresiones.checkNombre.test(nombre.value)){ //si la expresion regular (checknombre) es distinta al valor que ingresa el usuario como Nombre y Apellido Entonces
+      alertas = `• Las Iniciales deben llevar Mayúsculas <br>• No puede haber mas de UN espacio <br>• Prohibido ingresar Símbolos y Números `  ; // Alerta equivale a este texto
+      entrar = true; // si el usuario se equivoca en el ingreso de datos, la variable entrar pasa a valer true
+      parrafoNombres.innerHTML = alertas; //se escribe debajo del input las condiciones para escribir bien los datos
+      }
+    
+    if (!expresiones.checkEmail.test(email.value)){ //si la expresion regular (checkEmail) es distinta al valor que ingresa el usuario como Email Entonces
+      alertas = `• El Email no es válido !` ; 
+      entrar = true; 
+      parrafoEmail.innerHTML = alertas; 
+    }
+
+    if (!expresiones.checkPassword.test(password.value)){ //si el mensaje que ingresa el usuario es menor a caracteres entonces...
+      alertas = `• Minimo 8 Caracteres, Maximo 16 caracteres <br>• Al menos 1 Mayuscula y 1 Minuscula <br>• Al Menos un Digito <br>• No puede haber espacios en blanco <br>• Al menos un caracter especial `  ; // Alerta equivale a este texto 
+      entrar = true; 
+      parrafoPassword.innerHTML = alertas; 
+    }
+
+    if (!entrar){ //si entrar es distinta a true entonces ejecuta la funcion, ya que si entrar fuese True estaría entrando en los if, y no deberia ejecutarse la opcion de validacion
+      validado(); //llamada a la funcion validado
+      }
+});
+
+function validado(){ //definicion de funcion validado
+    alert("USUARIO REGISTRADO MUCHAS GRACIAS");
+    return location.reload(); //carga denuevo la url actual, como un refresh..
+  }
+
+  

@@ -55,6 +55,7 @@ const anclaImgHP = document.querySelector('.imgHPCartHTML');
 // boton close del contenedor No stock
 const btnCloseStock = document.querySelector('.btnCloseStock');
 
+
 function parse_query_string(query) {
     var vars = query.split("&");
     var query_string = {};
@@ -106,10 +107,15 @@ productList.push({
 });
 
 const cartItems = productList.filter((item) =>
-    arrayItemsSelected?.includes(item.id.toString())
+    arrayItemsSelected?.includes(item.id.toString()),
 );
+try{
+if (arrayItemsSelected[0] || arrayItemsSelected[1] || arrayItemsSelected[2]){
+    document.querySelector('.carritoVacio').style.display = 'none'
+}
+}catch(err){console.log('');}
 
-// le agrego la imagen de cada producto a los anclas que estan en el html
+// le agrego la imagen de cada producto a los anclas que estan en el shop.html
 
 // TROOPER IMAGEN
 try {
@@ -143,7 +149,7 @@ try {
     console.log('');
 }
 
-// Creo dentro del contenedor del html todos los hijos que forman parte de la descripcion del producto.
+// Creo dentro del contenedor del shop.html todos los hijos que forman parte de la descripcion del producto.
 
 // TROOPER DESCRIPCION DE PRODUCTO
 
@@ -253,7 +259,6 @@ try {
             function substractProducts(){
                 arrayItemsSelected.forEach((item) => {
                     if (item == 1){
-                        console.log('preciohtml.textcontent = ' + precioHTML.textContent);
                         let resta = productList[0].price - 20000;
                         precioHTML.textContent = '$' + resta;
                         productList[0].price -= 20000;

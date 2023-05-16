@@ -278,6 +278,21 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] { -moz-appearance:textfield; }
 
 
+/* ESSTILO PAR SPAN DE CARRITO DE COMPRAS VACIO EN CART.HTML */
+.carritoVacio{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: red;
+    word-break: break-word;
+    margin: 20px;
+}
+
+hr {
+    width: 100%;
+}
 
 /*ESTILOS PARA LA SECCION ULTIMOS LANZAMIENTOS*/
 
@@ -534,6 +549,7 @@ footer p{
     background-color: transparent;
     border: 1px solid #ff4848;
     border-radius: 5px;
+    margin: 5%;
 }
 
 .sign-in-container {
@@ -577,6 +593,7 @@ h1 {
     cursor: pointer;
     text-decoration: underline;
 }
+
 
 /* ESTILOS PARA LA SECCION DE CONTACTO */
 
@@ -666,7 +683,7 @@ h1 {
 /*mensajes en el formulario (parrafos)*/
 .alertas{ 
     color: #ff4848;
-    font-size: 15px;
+    font-size: 0.8rem;
 }
 
 
@@ -675,7 +692,7 @@ h1 {
     background-color: #101010;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: center;
@@ -695,8 +712,8 @@ h1 {
 
 .btnCloseStock{
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 20%;
+    right: 1%;
     border: none;
     background: #101010;
     cursor: pointer;
@@ -709,7 +726,7 @@ h1 {
     align-items: center;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     text-align: center;
     background-color: #101010;
