@@ -55,6 +55,10 @@ const anclaImgHP = document.querySelector('.imgHPCartHTML');
 // boton close del contenedor No stock
 const btnCloseStock = document.querySelector('.btnCloseStock');
 
+// input search en shop.html
+const inputSearch = document.querySelector('.inputSearch');
+// boton search en shop.html
+const btnSearch = document.querySelector('.buttonSearch');
 
 function parse_query_string(query) {
     var vars = query.split("&");
@@ -83,7 +87,7 @@ function parse_query_string(query) {
 const productList = [];
 productList.push({
     tag: 'Star Wars',
-    name: 'STORMTROOPER LIGTHSABER',
+    name: 'LUKE SKYWALKER',
     price: 20000,
     img: '../img/star-wars/luke-1.webp',
     id: 1,
@@ -311,7 +315,6 @@ try{
         e.preventDefault();
         document.querySelector('.noStock').style.display= 'flex';
         document.body.style.overflowY = 'hidden';
-        console.log(document.body)
     }
     btnCloseStock.addEventListener('click', (e)=>{
         document.querySelector('.noStock').style.display= 'none';
@@ -334,6 +337,56 @@ try{
         document.querySelector('.comprado').style.display = 'none';
         document.body.style.overflowY = 'auto';
     });
+}catch(err){
+    console.log('');
+}
+
+// FILTRO DE BUSQUEDA EN SHOP.HTML
+
+try{
+     btnSearch.addEventListener('click', filter);
+     document.addEventListener('keyup', filter);
+     function filter(){
+        let newInputSearch = inputSearch.value.toLowerCase();
+        if (newInputSearch == 'h' || newInputSearch == 'ha' || newInputSearch == 'har' 
+        || newInputSearch == 'harr' || newInputSearch == 'harry potter' 
+        || newInputSearch == 'harry' || newInputSearch == 'potter' 
+        || newInputSearch == 'hp' || newInputSearch == 'hermione' 
+        || newInputSearch == 'granger' || newInputSearch == 'hermione granger'){
+            document.querySelector('.noResults').innerHTML = '';
+            document.querySelector('.pokemon').style.display='none';
+            document.querySelector('.starwars').style.display='none';
+            document.querySelector('.harrypotter').style.display = 'block';
+        } 
+        else if (newInputSearch == 'p' || newInputSearch == 'po' || newInputSearch == 'pok' 
+        || newInputSearch == 'poke' || newInputSearch == 'pokemon' 
+        || newInputSearch == 'pi' || newInputSearch == 'pik' 
+        || newInputSearch == 'pika' || newInputSearch == 'pikac' 
+        || newInputSearch == 'pikach' || newInputSearch == 'pikachu'){
+            document.querySelector('.noResults').innerHTML = '';
+            document.querySelector('.starwars').style.display='none';
+            document.querySelector('.harrypotter').style.display = 'none';
+            document.querySelector('.pokemon').style.display='block';
+        } 
+        else if (newInputSearch == 's' || newInputSearch == 't' || newInputSearch == 'a' 
+        || newInputSearch == 'r' || newInputSearch == 'star' 
+        || newInputSearch == 'star wars' || newInputSearch == 'tro' 
+        || newInputSearch == 'troo' || newInputSearch == 'troop' 
+        || newInputSearch == 'trooper' || newInputSearch == 'lu'
+        || newInputSearch == 'luk' || newInputSearch == 'luke' 
+        || newInputSearch == 'sk' || newInputSearch == 'sky'
+        || newInputSearch == 'skyw' || newInputSearch == 'skywalker' ){
+            document.querySelector('.noResults').innerHTML = '';
+            document.querySelector('.harrypotter').style.display = 'none';
+            document.querySelector('.pokemon').style.display='none';
+            document.querySelector('.starwars').style.display='block';
+        }else if(newInputSearch == ''){
+            document.querySelector('.noResults').innerHTML = '';
+        }
+        else {
+            document.querySelector('.noResults').innerHTML = '⚠ No hay resultados para tu busqueda'
+        }
+     }
 }catch(err){
     console.log('');
 }

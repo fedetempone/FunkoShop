@@ -484,6 +484,11 @@ footer p{
     font-weight: bold;
 }
 
+.noResults{
+    font-size: 0.8rem;
+    color: red;
+}
+
 .inputSearch{
     font-size: 12px;
     padding: 5px 12px;

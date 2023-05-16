@@ -4,6 +4,8 @@ const registrarse = document.querySelector('.inputRegistrarse');
 const iniciar_sesion = document.querySelector('.inputIniciarSesion');
 const nombre = document.getElementById('name');
 const email = document.getElementById('email');
+const email_login = document.getElementById('email2');
+const password_login = document.getElementById('password2');
 const password = document.getElementById('password');
 const parrafoNombres = document.querySelector(".alertas-names");
 const parrafoEmail = document.querySelector(".alertas-email");  
@@ -60,7 +62,23 @@ registrarse.addEventListener('click', (e) => {
 
 function validado(){ //definicion de funcion validado
     alert("USUARIO REGISTRADO MUCHAS GRACIAS");
-    return location.reload(); //carga denuevo la url actual, como un refresh..
+    sign_up_container.style.display = "none";
+    sign_in_container.style.display = 'block';
+    // return location.reload(); //carga denuevo la url actual, como un refresh..
   }
 
+iniciar_sesion.addEventListener('click', (e)=>{ 
+  e.preventDefault();
+  console.log('carga el click');
+  console.log(email.value);
+  console.log(email_login.value);
+  console.log(password.value);
+  console.log(password_login.value );
+  if (email.value == email_login.value && password.value == password_login.value){
+    alert('Usuario Logeado con Exito')
+    return window.location.href = "../index.html";
+  } else {
+    alert('El Email y las contraseñas no coinciden.');
+  }
+});
   
