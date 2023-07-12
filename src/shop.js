@@ -261,6 +261,9 @@ try {
             }
 
             function substractProducts(){
+                if (input.value == 1){
+                    return;
+                }
                 arrayItemsSelected.forEach((item) => {
                     if (item == 1){
                         let resta = productList[0].price - 20000;
